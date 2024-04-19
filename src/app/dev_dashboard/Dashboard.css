@@ -1,0 +1,76 @@
+.dashboard-container {
+    padding: 20px;
+  }
+  
+  .dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-header-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .dashboard-label {
+    margin-right: 10px;
+  }
+  
+  .dashboard-select {
+    width: 200px;
+  }
+  
+  .dashboard-datepicker {
+    width: 220px;
+  }
+  
+  .dashboard-tag-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+
+  .dashboard-tag-container2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  
+  .dashboard-heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #1890ff;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .dashboard-table {
+    width: 100%;
+  }
+  
+  .dashboard-card {
+    background-color: #f5f5f5;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    opacity: 0; /* Set initial opacity to 0 */
+    animation: fadeIn 3s ease-in forwards; /* Apply animation */
+    animation-delay: 0.5s; /* Delay the animation */
+  }
+    

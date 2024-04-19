@@ -47,12 +47,10 @@ const Dashboard = () => {
         datasets: [
             {
                 label: 'Pending',
-                backgroundColor: 'red',
                 data: tasksData.map(data => data.pendingTasks)
             },
             {
                 label: 'Completed',
-                backgroundColor: 'green',
                 data: tasksData.map(data => data.completedTasks)
             }
         ]
@@ -79,22 +77,18 @@ const Dashboard = () => {
             datasets: [
                 {
                     label: '0-7 Days',
-                    backgroundColor: 'red',
                     data: agingTasksData.map(data => data['0-7'])
                 },
                 {
                     label: '7-15 Days',
-                    backgroundColor: 'green',
                     data: agingTasksData.map(data => data['7-15'])
                 },
                 {
                     label: '15-20 Days',
-                    backgroundColor: 'blue',
                     data: agingTasksData.map(data => data['15-20'])
                 },
                 {
                     label: 'Above 20 Days',
-                    backgroundColor: 'yellow',
                     data: agingTasksData.map(data => data['above20'])
                 }
             ]
@@ -110,27 +104,22 @@ const Dashboard = () => {
             datasets: [
                 {
                     label: '0-20%',
-                    backgroundColor: 'red',
                     data: [5, 8] // Sample data, replace with actual data
                 },
                 {
                     label: '21-40%',
-                    backgroundColor: 'green',
                     data: [10, 12] // Sample data, replace with actual data
                 },
                 {
                     label: '41-60%',
-                    backgroundColor: 'blue',
                     data: [15, 18] // Sample data, replace with actual data
                 },
                 {
                     label: '61-80%',
-                    backgroundColor: 'yellow',
                     data: [20, 22] // Sample data, replace with actual data
                 },
                 {
                     label: '81-100%',
-                    backgroundColor: 'purple',
                     data: [25, 28] // Sample data, replace with actual data
                 }
             ]

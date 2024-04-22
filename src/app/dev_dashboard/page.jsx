@@ -16,7 +16,7 @@ Chart.register(...registerables);
 
 const Dashboard = () => {
     const [selectedDateRange, setSelectedDateRange] = useState([]);
-    const [selectedEmployee, setSelectedEmployee] = useState('');
+    const [selectedEmployee, setSelectedEmployee] = useState('Select Employee');
     const [showTaskChart, setShowTaskChart] = useState(false);
     const [showAgingChart, setShowAgingChart] = useState(false);
     const [showTimelineChart, setShowTimelineChart] = useState(false);
@@ -192,7 +192,7 @@ const Dashboard = () => {
                             )}
                         </Card>
 
-                        <Card className="dashboard-card fade-in" title="Department-wise Pending Tasks Aging">
+                        <Card className="dashboard-card fade-in" title="Department-wise Pending Tasks Aging" >
                             <Row justify="end" style={{ marginBottom: '10px' }}>
                                 <Col>
                                     <Switch checkedChildren="Chart" unCheckedChildren="Table" onChange={(checked) => setShowAgingChart(checked)} />

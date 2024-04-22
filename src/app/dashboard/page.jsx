@@ -7,9 +7,9 @@ const ITTasks = () => {
   const [tasks, setTasks] = useState([
     { id: 1, name: "Update server configurations", list: "pending" },
     { id: 2, name: "Fix database connection issues", list: "pending" },
-    { id: 3, name: "Implement new security protocols", list: "pending" },
+    { id: 3, name: "Implement new security protocols", list: "hold" },
     { id: 4, name: "Optimize website performance", list: "pending" },
-    { id: 5, name: "Deploy latest software updates", list: "pending" }
+    { id: 5, name: "Deploy latest software updates", list: "done" }
   ]);
 
   const onDragStart = (e, task) => {
